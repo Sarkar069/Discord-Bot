@@ -4,7 +4,7 @@ This bot is developed using the [Disnake](https://guide.disnake.dev/) library, a
 Creating a Discord bot involves several steps. Here is a detailed process to create a Discord bot:
 
 ### Step 1: Create a Discord Account and Server
-**Create a Discord Account**: If you don't already have a Discord account, create one by downloading and installing the Discord application from the official website.\
+**__Create a Discord Account__**: If you don't already have a Discord account, create one by downloading and installing the Discord application from the official website.\
 Create a Server: Create a server by clicking on the "+" icon in the bottom left corner of the Discord application and selecting "Create a Server." Choose a name and icon for your server.
 ### Step 2: Create a Discord Application
 **Access the Developer Portal**: Go to the [Discord Developer Portal](https://discord.com/developers/applications) into your browser.\
