@@ -2,4 +2,3 @@ disnake
 python-dotenv
 psutil
 uptime
-
