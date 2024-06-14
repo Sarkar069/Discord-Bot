@@ -7,7 +7,7 @@ Creating a Discord bot involves several steps. Here is a detailed process to cre
 **Create a Discord Account**: If you don't already have a Discord account, create one by downloading and installing the Discord application from the official website.\
 Create a Server: Create a server by clicking on the "+" icon in the bottom left corner of the Discord application and selecting "Create a Server." Choose a name and icon for your server.
 ### Step 2: Create a Discord Application
-**</Access the Developer Portal>**: Go to the [Discord Developer Portal](https://discord.com/developers/applications) into your browser.\
+**<u></u>Access the Developer Portal</u>**: Go to the [Discord Developer Portal](https://discord.com/developers/applications) into your browser.\
 *Create a New Application*: Click on the "New Application" button.\
 Name the Application: Fill in the details of your app (name, etc.) and proceed to the app's dashboard.\
 Switch to Bot Mode: Look up "Bot" on the settings list and click "Add Bot" to switch your app to bot mode.
