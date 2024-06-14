@@ -1,0 +1,8 @@
+disnake
+python-dotenv
+psutil
+uptime
+feedparser
+requests
+APScheduler
+
