@@ -6,8 +6,9 @@ import psutil
 import asyncio
 from disnake.ext import commands
 
-url = "https://cdn.discordapp.com/attachments/1101410251061866590/1139508274367045632/bot_logo.png"
+url = ""
 
+# this is for your bots uptime 
 ram_usage = psutil.virtual_memory().percent
 ram_usage_str = f"{ram_usage}%"
 
@@ -54,7 +55,7 @@ class Uptime(commands.Cog):
      seconds = seconds % 60
      uptime_string = f"{days}d {hours}h {minutes}m {seconds}s"
      embed = disnake.Embed(
-        title="Stellar Enigma",
+        title="Your bot name",
         description=None,
         color=disnake.Colour.purple(),
     )
@@ -70,7 +71,7 @@ class Uptime(commands.Cog):
 
 
      
-     embed.set_footer(text="@ Sarkar#8622", icon_url=None)
+     embed.set_footer(text="Your name if you like", icon_url=None)
      await ctx.edit_original_response(embed=embed)
  
    
