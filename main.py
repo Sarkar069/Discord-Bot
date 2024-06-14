@@ -31,7 +31,7 @@ async def change_activity():
         await bot.change_presence(activity=activity)
         print(f"Updated activity: {activity.type.name} - {activity.name}")
         await asyncio.sleep(30 * 60)
-        #updates bot updates bot activity after every 30 minutes
+        #updates bot activity after every 30 minutes
         
 cog_modules = [
     "ping", "uptime"
