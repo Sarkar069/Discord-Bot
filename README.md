@@ -13,7 +13,7 @@ Create a Server: Create a server by clicking on the "+" icon in the bottom left 
 **Switch to Bot Mode**: Look up "Bot" on the settings list and click "Add Bot" to switch your app to bot mode.
 ### Step 3: Create a Bot
 **Reset Token**: Select the "Reset Token" option and confirm by clicking "Yes, do it!".\
-**Copy the Bot Token**: The bot token is your bot's password. Copy the token to the clipboard and paste it into your .env.
+**Copy the Bot Token**: The bot token is your bot's password. Copy the token to the clipboard and paste it into your [.env](https://github.com/Sarkar069/Discord-Bot/blob/main/.env).
 ### Step 4: Invite the Bot to a Server
 **OAuth2 Tab**: Switch to the "OAuth2" tab.\
 **Set Permissions**: Set the app's scope to "bot" and choose the permissions you want for the bot.\
