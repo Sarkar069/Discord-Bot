@@ -20,4 +20,6 @@ Create a Server: Create a server by clicking on the "+" icon in the bottom left 
 **Create an Invite URL**: The bot will generate a URL at the bottom. Copy the URL and paste it into your browser.\
 **Authorize the Bot**: Choose a server to invite the bot to and click "Authorize".
 
+### Commands
+
 ### Enjoy...! 🎉
