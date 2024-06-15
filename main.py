@@ -34,7 +34,7 @@ async def change_activity():
         #updates bot activity after every 30 minutes
         
 cog_modules = [
-    "ping", "uptime"
+    "dog", "ping", "uptime"
 ]
 
 
