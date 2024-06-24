@@ -1,6 +1,5 @@
 import disnake
 from disnake.ext import commands
-import asyncio
 
 
 bot = commands.InteractionBot(intents=disnake.Intents.all())
@@ -16,7 +15,6 @@ class PingCommand(commands.Cog):
     @commands.guild_only()
     async def ping(self, ctx: disnake.ApplicationCommandInteraction):
         await ctx.response.defer(ephemeral=True) # if true only who ran the command can see the message bot send
-        await asyncio.sleep(3)
         embed = disnake.Embed(title=f" Pong..! 🏓 `{round(self.bot.latency * 1000)}` ms", color=disnake.Colour.purple())
         embed.set_author(name="Your Bot name", icon_url=url)
         await ctx.edit_original_response(embed=embed)
