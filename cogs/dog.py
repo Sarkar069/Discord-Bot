@@ -1,6 +1,5 @@
 import disnake
 from disnake.ext import commands
-import asyncio
 import requests
 
 class DogCommand(commands.Cog):
@@ -12,7 +11,6 @@ class DogCommand(commands.Cog):
     async def dog(self, ctx: disnake.ApplicationCommandInteraction):
      await ctx.response.defer()
 
-     await asyncio.sleep(3)
 
      url = "https://random.dog/woof.json"
      response = requests.get(url)
