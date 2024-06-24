@@ -3,7 +3,6 @@ import uptime
 import datetime
 import time
 import psutil
-import asyncio
 from disnake.ext import commands
 
 url = ""
@@ -45,7 +44,6 @@ class Uptime(commands.Cog):
     @commands.guild_only()
     async def stats(self, ctx: disnake.ApplicationCommandInteraction):
      await ctx.response.defer(ephemeral=True)
-     await asyncio.sleep(3)
      
      uptime_seconds = int(round(time.time() - startTime))
      uptime_timedelta = datetime.timedelta(seconds=uptime_seconds)
