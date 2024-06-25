@@ -8,7 +8,7 @@ class DogCommand(commands.Cog):
         
     @commands.slash_command(description="get a random pic of dog")
     @commands.cooldown(1, 5, commands.BucketType.user)
-    async def dog(self, ctx: disnake.ApplicationCommandInteraction):
+    async def dog(self, inter: disnake.ApplicationCommandInteraction):
      await ctx.response.defer()
 
 
@@ -18,9 +18,9 @@ class DogCommand(commands.Cog):
      if response.status_code == 200:
          data = response.json() 
          image = data['url']
-         await ctx.edit_original_response(image) #send a random image or gif of a dog
+         await inter.edit_original_response(image) #send a random image or gif of a dog
      else:
-         await ctx.edit_original_response(f"Error: {response.status_code} {response.text}")
+         await inter.edit_original_response(f"Error: {response.status_code} {response.text}")
          
     
 
