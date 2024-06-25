@@ -13,11 +13,11 @@ class PingCommand(commands.Cog):
 
     @commands.slash_command(description="Get the bot's current websocket latency.")
     @commands.guild_only()
-    async def ping(self, ctx: disnake.ApplicationCommandInteraction):
+    async def ping(self, inter: disnake.ApplicationCommandInteraction):
         await ctx.response.defer(ephemeral=True) # if true only who ran the command can see the message bot send
         embed = disnake.Embed(title=f" Pong..! 🏓 `{round(self.bot.latency * 1000)}` ms", color=disnake.Colour.purple())
         embed.set_author(name="Your Bot name", icon_url=url)
-        await ctx.edit_original_response(embed=embed)
+        await inter.edit_original_response(embed=embed)
         
         
 
