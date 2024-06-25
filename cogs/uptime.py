@@ -42,8 +42,8 @@ class Uptime(commands.Cog):
 
     @commands.slash_command(description="info about bot stats")
     @commands.guild_only()
-    async def stats(self, ctx: disnake.ApplicationCommandInteraction):
-     await ctx.response.defer(ephemeral=True)
+    async def stats(self, inter: disnake.ApplicationCommandInteraction):
+     await inter.response.defer(ephemeral=True)
      
      uptime_seconds = int(round(time.time() - startTime))
      uptime_timedelta = datetime.timedelta(seconds=uptime_seconds)
@@ -70,7 +70,7 @@ class Uptime(commands.Cog):
 
      
      embed.set_footer(text="Your name if you like", icon_url=None)
-     await ctx.edit_original_response(embed=embed)
+     await inter.edit_original_response(embed=embed)
  
    
 
